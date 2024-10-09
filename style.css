@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'gohu';
+  src:  url('/fonts/gohufont-14.woff2'),
+        url('/fonts/gohufont-14.woff'),
+        url('/fonts/gohufont-14.ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+
+body{
+  font-family: 'gohu', sans-serif;
+}
