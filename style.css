@@ -61,6 +61,8 @@ main {
 }
 
 h1 {
+    font-family: "Space Grotesk";
+    font-weight: 300;
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #111;
