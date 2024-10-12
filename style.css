@@ -89,6 +89,11 @@ hr {
     background-color: #333; /* Simple, precise dividers */
 }
 
+figure {
+  border-bottom: 1px dotted black;
+  margin-bottom: 30px;
+}
+
 figure img {
   max-width: 100%;
 }
