@@ -133,6 +133,11 @@ hr {
     padding: 20px;
 }
 
+.no-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Responsiveness */
 @media (max-width: 824px) {
     h1 {
