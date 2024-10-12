@@ -89,6 +89,10 @@ hr {
     background-color: #333; /* Simple, precise dividers */
 }
 
+figure img {
+  max-width: 100%;
+}
+
 /* Side menu styling */
 .side-menu {
     position: fixed;
@@ -131,6 +135,9 @@ hr {
 .project-sections {
     margin-left: 260px; /* To make space for the side menu */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .no-decoration {
