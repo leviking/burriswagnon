@@ -77,6 +77,10 @@ p {
     line-height: 1.8; /* Slight increase for readability and clean spacing */
 }
 
+section {
+  margin-bottom: 30px;
+}
+
 
 /* Emphasis on line weights for key sections */
 hr {
