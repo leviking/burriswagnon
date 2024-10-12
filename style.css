@@ -6,6 +6,12 @@
         font-weight: normal;
         font-style: normal;
 }
+@font-face {
+  font-family: 'Didot';
+  src:  url('/fonts/Didot.otf');
+        font-weight: normal;
+        font-style: normal;
+}
 
 /* General reset */
 * {
