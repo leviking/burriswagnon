@@ -159,14 +159,14 @@ figure img {
 /* thumbnail styling */ 
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px; /* space between the images */
   margin-top: 20px; /* add space above the grid */
 }
 
 .thumbnails img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 8px; /* optional rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional shadow for a polished look */
