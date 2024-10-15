@@ -174,7 +174,8 @@ figure img {
 }
 .principle {
   width: 100%;
-  max-width: 640px;
+  max-width: 480px;
+  margin: 60px;
 }
 
 
