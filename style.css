@@ -172,6 +172,10 @@ figure img {
   border-radius: 8px; /* optional rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional shadow for a polished look */
 }
+.principle {
+  width: 100%;
+  max-width: 800px;
+}
 
 
 /* Responsiveness */
