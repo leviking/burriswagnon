@@ -175,8 +175,8 @@ figure img {
 .principle {
   width: 100%;
   max-width: 480px;
-  margin: 60px;
-  box-shadow: -10px 5px 5px lightgray;
+  margin-bottom: 60px;
+  box-shadow: -5px 5px 5px lightgray;
 }
 
 
