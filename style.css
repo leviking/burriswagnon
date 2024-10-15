@@ -162,7 +162,7 @@ figure img {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px; /* space between the images */
   margin-top: 20px; /* add space above the grid */
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .thumbnails img {
