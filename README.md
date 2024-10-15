@@ -28,4 +28,4 @@ The folder structure of images more or less mirrors the rest of the structure to
 ## TODO
 -[] open images in a modal
 -[] add hover line to active project page
--[] figure out contact
+-[x] figure out contact
