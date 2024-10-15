@@ -61,6 +61,11 @@ nav a:hover {
     border-bottom: 1px solid #000; /* Line weight emphasis on hover */
 }
 
+nav a.active{
+    color: #000;
+    border-bottom: 1px solid #000; /* Line weight emphasis on hover */
+}
+
 /* Main content */
 main {
     padding: 50px 0;
@@ -137,7 +142,12 @@ figure img {
 .side-menu ul li a:hover {
     color: #000;
     border-left: 3px solid #222;
-} 
+}
+
+.side-menu ul li a.active {
+  color: #000; /* Same color as hover */
+  border-left: 3px solid #222; /* Same border as hover */
+}
 
 .container {
      display: flex;
@@ -211,6 +221,9 @@ figure img {
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0;
+    }
+    .side-menu ul li a.active {
+      color: #000; /* Same color as hover */
     }
 
     .project-sections {
