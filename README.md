@@ -24,3 +24,8 @@ Although it is possible to get further in the weeds and make sub-sub-folders for
 ## Images
 
 The folder structure of images more or less mirrors the rest of the structure to keep from cluttering the actual markup of the site with images. I may come to regret that. In any case, simply add folders where appropriate and use them in the html. If it turns out there needs to be video or anything else - I'll cross that bridge when we get to it.
+
+## TODO
+-[] open images in a modal
+-[] add hover line to active project page
+-[] figure out contact

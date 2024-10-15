@@ -13,7 +13,7 @@
 -EllzeyHall
 -SoutheastRegionalTraining
 
-#Civic
+#Civic x
 -MississippiLibraryCommision
 -EllisvillePublicLibrary
 -BrookhavenLibrary
@@ -22,12 +22,12 @@
 -CamdenLibrary
 -FloraPublicLibrary
 
-#Office
+#Office x
 -BowlesHallAtAlcorn
 -DepartmentOfRehabilitationServices
 -RobertELeeTenantImprovement
 
-#Preservation
+#Preservation x 
 -NavalReserveCenter
 -WestbrookHome
 -BaileySchool
@@ -35,13 +35,13 @@
 -BowlesHall
 -MississippiStateHospital
 
-#Ecclesiastical
+#Ecclesiastical x
 -RedeemerChurch
 -UrbanMinistryCenter
 -ProvidencePresbyterian
 -FirstChristianChurch
 
-#Residential
+#Residential x
 -BelhavenResidence
 -JacksonResidence
 -MorrisResidence
