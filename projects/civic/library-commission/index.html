@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
@@ -47,15 +48,15 @@
         <p><b>Furniture and Equipment Cost: $2.9 Million</b></p>
         <p><b><em>Completed 2005</em></b></p>
         <div class="thumbnails">
-          <img src="1.webp" />
-          <img src="2.webp" />
-          <img src="3.webp" />
-          <img src="4.webp" />
-          <img src="5.webp" />
-          <img src="6.webp" />
-          <img src="7.webp" />
-          <img src="8.webp" />
-          <img src="9.webp" />
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
         </div>
         <em>Joint Venture with Duvall Decker Architects</em>
         <em>Winner 2006 AIA Mississippi Honor Award</em>
@@ -65,5 +66,9 @@
         <em>Selected 2011 American Institute of Architects “Design for Decades” Exhibition</em>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
