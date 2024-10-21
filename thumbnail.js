@@ -48,6 +48,17 @@ dialog.addEventListener('click', (event) => {
   }
 });
 
+// Event listener for keydown events to navigate with arrow keys
+document.addEventListener('keydown', (event) => {
+  if (dialog.open) { // Only listen if the dialog is open
+    if (event.key === 'ArrowLeft') {
+      updateImage(currentIndex - 1); // Left arrow - show previous image
+    } else if (event.key === 'ArrowRight') {
+      updateImage(currentIndex + 1); // Right arrow - show next image
+    }
+  }
+});
+
 // Close the dialog when clicking outside of the image
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) {
