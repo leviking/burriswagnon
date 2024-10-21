@@ -190,21 +190,23 @@ figure img {
 }
 dialog {
   width: 80%;
+  max-width: 800px; /* Optional: set a max width if desired */
   border: none;
   padding: 0;
   overflow: hidden;
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: auto;
+  position: fixed; /* Fix the dialog in the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the dialog */
+  margin: 0; /* Remove margins to avoid shifting */
 }
 
 dialog img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Maintain the aspect ratio */
   object-fit: contain;
   display: block;
 }
-
 
 
 /* Responsiveness */
