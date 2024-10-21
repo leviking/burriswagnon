@@ -190,12 +190,11 @@ figure img {
 }
 dialog {
   width: 80%;
-  height: 80%;
   border: none;
   padding: 0;
   overflow: hidden;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-right: auto;
   margin-bottom: auto;
 }
