@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Carousel Container */
+    .carousel {
+      width: 100%;
+      max-width: 800px; /* Adjust as needed */
+      height: 400px; /* Set your desired height */
+      margin: 50px auto; /* Center the carousel */
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #ddd; /* Optional: Add border */
+      border-radius: 10px; /* Optional: Rounded corners */
+    }
+
+    /* Slides Container */
+    .slides {
+      display: flex;
+      width: 400%; /* 100% * number of slides (4 slides) */
+      height: 100%; /* Match carousel height */
+      transition: transform 0.6s ease;
+      animation: slideAnimation 20s infinite;
+    }
+
+    /* Each Slide */
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0; /* Optional: Background color for empty space */
+    }
+
+    /* Slide Images */
+    .slide img {
+      max-height: 100%;
+      width: auto;
+      object-fit: contain; /* Ensures the image scales correctly */
+    }
+
+    /* Manual Navigation Buttons */
+    .navigation-manual {
+      position: absolute;
+      width: 100%;
+      bottom: 10px; /* Position navigation buttons at the bottom */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .manual-btn {
+      border: 2px solid #fff;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin: 0 5px;
+      background: #fff;
+    }
+
+    .manual-btn:hover,
+    .manual-btn:focus {
+      background: #ddd;
+    }
+
+    /* Keyframes for Autoplay Animation */
+    @keyframes slideAnimation {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-36%); }
+      45% { transform: translateX(-36%); }
+      50% { transform: translateX(-72%); }
+      70% { transform: translateX(-72%); }
+      75% { transform: translateX(-105%); }
+      95% { transform: translateX(-105%); }
+      100% { transform: translateX(0%); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .carousel {
+        max-width: 100%;
+        height: 30vh; /* Adjust height for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="1.png" alt="Slide 1">
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="2.jpg" alt="Slide 2">
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="3.jpg" alt="Slide 3">
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img src="4.jpg" alt="Slide 4">
+      </div>
+    </div>
+    <!-- Manual Navigation (Optional) -->
+    <div class="navigation-manual">
+      <span class="manual-btn"></span>
+      <span class="manual-btn"></span>
+      <span class="manual-btn"></span>
+      <span class="manual-btn"></span>
+    </div>
+  </div>
+</body>
+</html>

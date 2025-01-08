@@ -3,14 +3,14 @@
   src:  url('/fonts/gohufont-14.woff2'),
         url('/fonts/gohufont-14.woff'),
         url('/fonts/gohufont-14.ttf');
-        font-weight: normal;
-        font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Didot';
   src:  url('/fonts/Didot.otf');
-        font-weight: normal;
-        font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* General reset */
@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    font-family: 'gohu', 'Helvetica Neue', Arial, sans-serif; */
+    /* font-family: 'gohu', 'Helvetica Neue', Arial, sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -72,14 +72,40 @@ main {
     padding: 50px 0;
 }
 
+/* Grid Layout for Content */
+.content-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 for carousel, 1/3 for text */
+    gap: 40px; /* Space between columns */
+    align-items: start;
+    padding-bottom: 50px; /* Adds breathing room to emphasize line separation */
+    margin-bottom: 50px;
+    border-bottom: 2px solid #222; /* Strong line under header */
+}
+
+/* Carousel Column */
+.carousel-column {
+    /* No additional styles needed unless customization is desired */
+}
+
+/* Text Column */
+.text-column {
+    /* Optional: Add padding or styles if needed */
+}
+
+/* Header Styles */
 h1 {
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #111;
+    color: rgb(54, 192, 251);
     border-bottom: 2px solid #222; /* Strong line under header */
     padding-bottom: 10px; /* Adds breathing room to emphasize line separation */
+}
+
+h1 span {
+    color: rgb(234, 137, 9);
 }
 
 p {
@@ -92,7 +118,6 @@ p {
 section {
   margin-bottom: 30px;
 }
-
 
 /* Emphasis on line weights for key sections */
 hr {
@@ -167,7 +192,7 @@ figure img {
   color: inherit;
 }
 
-/* thumbnail styling */ 
+/* Thumbnail styling */ 
 .thumbnails {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -209,9 +234,118 @@ dialog img {
   display: block;
 }
 
+/* Carousel Container */
+.carousel {
+  width: 100%;
+  /* Remove max-width and margin to fit within grid */
+  height: 400px; /* Set your desired height */
+  /* margin: 50px auto; */ /* Removed to align within grid */
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ddd; /* Optional: Add border */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Slides Container */
+.slides {
+  display: flex;
+  width: 400%; /* 100% * number of slides (4 slides) */
+  height: 100%; /* Match carousel height */
+  transition: transform 0.6s ease;
+  animation: slideAnimation 20s infinite;
+}
+
+/* Each Slide */
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Background color for empty space */
+}
+
+/* Slide Images */
+.slide img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain; /* Ensures the image scales correctly */
+}
+
+/* Radio Buttons - Hidden */
+input[type="radio"] {
+  display: none;
+}
+
+/* Manual Navigation Buttons */
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  bottom: 10px; /* Position navigation buttons at the bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 0 5px;
+  background: #fff;
+}
+
+.manual-btn:hover,
+.manual-btn:focus {
+  background: #ddd;
+}
+
+/* Slide Positioning based on Radio Buttons */
+#radio1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#radio2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#radio3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#radio4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+    height: 30vh; /* Adjust height for smaller screens */
+  }
+}
+
+/* Keyframes for Autoplay Animation */
+@keyframes slideAnimation {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
 
 /* Responsiveness */
 @media (max-width: 824px) {
+    .content-container {
+      grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+
     h1 {
         font-size: 2rem;
     }
@@ -250,5 +384,10 @@ dialog img {
         margin-left: 0;
         padding: 10px;
     }
-}
 
+    /* Adjust carousel height for smaller screens within stacked layout */
+    .carousel {
+      height: 200px;
+      margin-bottom: 20px;
+    }
+}
