@@ -236,6 +236,31 @@ dialog img {
 
 /* Carousel Container */
 .carousel {
+  position: relative;
+  height: 233px;
+  margin-bottom: 30px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+
+.carousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+.carousel {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*
   width: 100%;
   /* Remove max-width and margin to fit within grid */
   height: 400px; /* Set your desired height */
@@ -244,7 +269,7 @@ dialog img {
   overflow: hidden;
   border: 2px solid #ddd; /* Optional: Add border */
   border-radius: 10px; /* Optional: Rounded corners */
-}
+*/
 
 /* Slides Container */
 .slides {
