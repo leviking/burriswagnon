@@ -60,7 +60,7 @@ main {
 /* Grid Layout for Content */
 .content-container {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for carousel, 1/3 for text */
+    grid-template-columns: 1fr 2fr; /* 2/3 for carousel, 1/3 for text */
     gap: 40px; /* Space between columns */
     align-items: start;
     padding-bottom: 50px; /* Adds breathing room to emphasize line separation */
@@ -71,25 +71,33 @@ main {
 /* Text Column */
 .text-column {
   width: 340px;
-    /* Optional: Add padding or styles if needed */
 }
 
 /* Carousel Column */
 .carousel-column {
-    /* No additional styles needed unless customization is desired */
-  width: 915px;
+  width: 100%;
+  max-width: 915px;
+  box-sizing: border-box;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  width: 915px;
+  width: 100%;
   position: relative;
   margin: auto;
+  box-sizing: border-box;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
@@ -334,12 +342,11 @@ dialog img {
     }
 
     .carousel-column {
-        max-width: 800px;
+        max-width: 100%;
     }
     /* Slideshow container */
     .slideshow-container {
-       width: 335px;
-       position: relative;
+       width: 100%;
        margin-left: 0px;
     }
 }
