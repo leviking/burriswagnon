@@ -1,24 +1,8 @@
-@font-face {
-  font-family: 'gohu';
-  src:  url('/fonts/gohufont-14.woff2'),
-        url('/fonts/gohufont-14.woff'),
-        url('/fonts/gohufont-14.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Didot';
-  src:  url('/fonts/Didot.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'gohu', 'Helvetica Neue', Arial, sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
