@@ -299,30 +299,13 @@ dialog img {
   to {opacity: 1}
 }
 
-/*
-  width: 100%;
-  /* Remove max-width and margin to fit within grid */
-  height: 400px; /* Set your desired height */
-  /* margin: 50px auto; */ /* Removed to align within grid */
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #ddd; /* Optional: Add border */
-  border-radius: 10px; /* Optional: Rounded corners */
-*/
-
-/* Slides Container */
-.slides {
-  display: flex;
-  width: 400%; /* 100% * number of slides (4 slides) */
-  height: 100%; /* Match carousel height */
-  transition: transform 0.6s ease;
-  animation: slideAnimation 20s infinite;
-}
-
-
-
 /* Responsiveness */
 @media (max-width: 824px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
     .content-container {
       grid-template-columns: 1fr; /* Stack columns vertically */
     }
@@ -366,9 +349,13 @@ dialog img {
         padding: 10px;
     }
 
-    /* Adjust carousel height for smaller screens within stacked layout */
-    .carousel {
-      height: 200px;
-      margin-bottom: 20px;
+    .carousel-column {
+        max-width: 800px;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+       width: 335px;
+       position: relative;
+       margin-left: 0px;
     }
 }
