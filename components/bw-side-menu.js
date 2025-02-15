@@ -55,6 +55,33 @@ class BwSideMenu extends HTMLElement {
           color: #000; /* Same color as hover */
           border-left: 3px solid #222; /* Same border as hover */
         }
+
+        @media (max-width: 824px) {
+
+          .side-menu {
+              width: 100%;
+              max-width: 100vw;
+              position: static;
+              padding: 10px 0;
+              border-right: none;
+              border-bottom: 1px solid #ddd;
+          }
+
+          .side-menu ul {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              padding: 0;
+          }
+          .side-menu ul li a.active {
+            color: #000; /* Same color as hover */
+          }
+
+          .project-sections {
+              margin-left: 0;
+              padding: 10px;
+          }
+        }
       </style>
       <aside class="side-menu">
         <ul>
