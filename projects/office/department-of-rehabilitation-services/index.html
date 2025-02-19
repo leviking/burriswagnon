@@ -6,38 +6,14 @@
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
+    <bw-nav active="projects"></bw-nav>
 		</nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a href="/projects/educational/index.html">Educational</a></li>
-          <li><a href="/projects/civic/index.html"
->Civic</a></li>
-          <li><a class="active" href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="office"></bw-side-menu>
   		<main class="project-sections">
         <h1>New Office, Mississippi Department of Rehabilitation Services</h1>
         <small>
@@ -51,7 +27,35 @@
         <p><b>Construction Cost: <em>$12.3 million</em></b></p>
         <p><b>Completed 2014</b></p>
         <p><em>Winner 2016 AIA Mississippi Merit Award</em></p>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
+          <img src="10.webp" data-fullsize="10.webp"/>
+          <img src="11.webp" data-fullsize="11.webp"/>
+          <img src="12.webp" data-fullsize="12.webp"/>
+          <img src="13.webp" data-fullsize="13.webp"/>
+          <img src="14.webp" data-fullsize="14.webp"/>
+          <img src="15.webp" data-fullsize="15.webp"/>
+          <img src="16.webp" data-fullsize="16.webp"/>
+          <img src="17.webp" data-fullsize="17.webp"/>
+          <img src="18.webp" data-fullsize="18.webp"/>
+          <img src="19.webp" data-fullsize="19.webp"/>
+          <img src="20.webp" data-fullsize="20.webp"/>
+          <img src="21.webp" data-fullsize="21.webp"/>
+          <img src="22.webp" data-fullsize="22.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
