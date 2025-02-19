@@ -30,3 +30,7 @@ The folder structure of images more or less mirrors the rest of the structure to
 - [] replace all instances of side menu with component
 - [] possibly make thumbnail a component
 - [] make all images better
+- [] add photos and thumbnails to ecclesiastical
+- [] add photos and thumbnails to educational
+- [] add photos and thumbnails to preservation
+- [] add photos and thumbnails to civic
