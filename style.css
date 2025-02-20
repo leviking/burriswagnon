@@ -262,7 +262,7 @@ figure img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 8px; /* optional rounded corners */
+  border-radius: 0px; /* optional rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional shadow for a polished look */
 }
 .principle {
