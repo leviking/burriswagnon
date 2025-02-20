@@ -64,7 +64,7 @@ main {
     gap: 40px; /* Space between columns */
     align-items: start;
     padding-bottom: 50px; /* Adds breathing room to emphasize line separation */
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     border-bottom: 2px solid #222; /* Strong line under header */
 }
 
@@ -166,7 +166,7 @@ h1 span {
 
 p {
     font-size: 1.1rem;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 30px;
     line-height: 1.8; /* Slight increase for readability and clean spacing */
 }
@@ -177,6 +177,7 @@ section {
 
 /* Emphasis on line weights for key sections */
 hr {
+    margin-bottom: 8px;
     border: none;
     height: 1px;
     background-color: #333; /* Simple, precise dividers */
