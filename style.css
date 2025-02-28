@@ -21,6 +21,11 @@ body {
   margin-bottom: 18px;
 }
 
+.details {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /* Navigation bar */
 nav {
     background-color: #fff;
