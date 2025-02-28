@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a class="active" href="/projects/educational/index.html">Educational</a></li>
-          <li><a href="/projects/civic/index.html"
->Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="civic"></bw-side-menu>
   		<main class="project-sections">
+        <h1>Fant Memorial Library Addition and Renovation</h1>
+        <div class="location">Columbus, Mississippi</div>
+        <p>
+          Conceived in 1967 as a blocky two story vault for many books and few people, the original Fant Library housed 400,000 volumes, packed high, wall-to-wall, both floors. Libraries transformed radically over fifty years, evolving into less paper, more tech, more people. And thus MUW’s campus requested such a radical transformation of its half-century library — dispersion of the book collection, allowing for a thinner, lighter, dynamic, populated, and collaborative environment. State-of-the-art lecture and conferencing facilities, study rooms, special collections, gathering/seating areas, and cybercafe were designed. The greatest design challenge was dispersion, yet retention, of the 400,000 volume collection, while adding 26,525 GSF of new classroom/conferencing spaces, with defined exterior usable space, all on a very constrained site. The solution involved construction of a 3-story, 300,000 capacity, automated storage/retrieval system to allow flexible rotation, and thinning, of the static bound collection. This concept allowed reduced height, and footprint, of traditional stacks, allowing multiple collaborative spaces throughout. The original stolid structure, with a new front facade encapsulating the original porch for seating and floating study rooms, is now pierced with window walls, clerestories, a central light-well, a reconstructed south wall with rhythmical windows that overlook a new sculpture courtyard for study and receptions, reconfigured staff area, extensive seating, study rooms, gallery, all-hours computer, archives, and reduced stacks. The new south addition, with glass connecting bridges, lecture/meeting/conference rooms, perched study rooms, and a cybercafe tightly pressing the street, encloses the main courtyard while leaving a small cafe courtyard between the new and existing structures. Circulation in the addition wraps the courtyard, weaving in and out of mass, offering dynamic, varied views and experiences of the courtyard. Interplay of light, form, materials, and multiple layers of transparency, and transformation into a lantern quality at night, results in a magnetic university campus hub.
+        </p>
+        <div class="details">
+          <div>Phase I completed 2014</div>
+          <div>Phase II completed 2015</div>
+          <div>Phase III completed 2017</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
+          <img src="10.webp" data-fullsize="10.webp"/>
+          <img src="11.webp" data-fullsize="11.webp"/>
+          <img src="12.webp" data-fullsize="12.webp"/>
+          <img src="13.webp" data-fullsize="13.webp"/>
+          <img src="14.webp" data-fullsize="14.webp"/>
+          <img src="15.webp" data-fullsize="15.webp"/>
+          <img src="16.webp" data-fullsize="16.webp"/>
+          <img src="17.webp" data-fullsize="17.webp"/>
+          <img src="18.webp" data-fullsize="18.webp"/>
+          <img src="19.webp" data-fullsize="19.webp"/>
+          <img src="20.webp" data-fullsize="20.webp"/>
+          <img src="21.webp" data-fullsize="21.webp"/>
+          <img src="22.webp" data-fullsize="22.webp"/>
+          <img src="23.webp" data-fullsize="23.webp"/>
+          <img src="24.webp" data-fullsize="24.webp"/>
+        </div>
+        <div class="awards">
+          <div>Winner 2018 AIA Mississippi Merit Award</div>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
