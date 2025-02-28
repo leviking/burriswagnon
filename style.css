@@ -152,7 +152,7 @@ main {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.25s;
 }
 
 @keyframes fade {
@@ -302,6 +302,65 @@ dialog img {
   display: block;
 }
 
+/* Style for the dialog element */
+#imageDialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: 90vw;
+  max-height: 90vh;
+  outline: none; /* Removes the focus outline */
+  
+  /* Reset all potential border styling */
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  
+  /* This prevents any margin that might create space around the image */
+  margin: 0;
+  
+  /* Ensure no overflow */
+  overflow: visible;
+}
+
+/* This targets the backdrop of the dialog when it's open */
+#imageDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity - adjust as needed */
+}
+
+/* Style for the image inside the dialog */
+#dialogImage {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  
+  /* Reset all border-related properties */
+  border: none;
+  border-radius: 0;
+  
+  /* Optional: add a clean shadow to the image instead of browser focus styles */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove focus styles from both dialog and image */
+#imageDialog:focus,
+#imageDialog:focus-visible,
+#dialogImage:focus,
+#dialogImage:focus-visible {
+  outline: none;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+
+/* Override any user agent stylesheet that might be adding those borders */
+#imageDialog::before,
+#imageDialog::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+}
 
 /* Responsiveness */
 @media (max-width: 824px) {
