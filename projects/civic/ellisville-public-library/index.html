@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a href="/projects/educational/index.html">Educational</a></li>
-          <li><a class="active" href="/projects/civic/index.html">Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="civic"></bw-side-menu>
   		<main class="project-sections">
+        <h1>The Ellisville Public Library </h1>
+        <div class="location">Ellisville, Mississippi</div>
+        <p>
+          The Ellisville Public Library project entails the construction of a new 4,400 SF branch library for the expanding population of the city of Ellisville, Mississippi.  Replacing a juvenile detention center which previously existed on the site, the new library serves as a vital link between an existing residential neighborhood and Ellisville’s downtown area.  This is the first branch library building for Ellisville citizens, a function which was previously housed in one small room of the county courthouse.  The library offers both educational and civic space, including a children’s reading and activity room, active digital media stations, and a conference/ community  room to be used jointly by the library staff and the citizens of Ellisville.  A compact, efficient plan allows for maximum use of space, with the building consciously designed to allow for future expansion as necessary.  Highly durable, low-maintenance materials were utilized, such as brick and metal panels on the exterior and concrete block on the interior.  Minimal groundface concrete block walls offer textural variety at the children’s area and community room.  The use of layered glazed partitions provides a visual connectivity and spatial complexity to the interior space, while also affording visual access to the entire facility for a one-person staff.  This transparency also serves to evenly distribute light from eastern clerestories at the children’s reading/activity area, and northern light at the main reading room.
+        </p>
+        <div class="details">
+          <div>Completed 2009</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
+          <img src="10.webp" data-fullsize="10.webp"/>
+          <img src="11.webp" data-fullsize="11.webp"/>
+          <img src="12.webp" data-fullsize="12.webp"/>
+          <img src="13.webp" data-fullsize="13.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
