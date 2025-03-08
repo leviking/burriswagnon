@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a href="/projects/educational/index.html">Educational</a></li>
-          <li><a class="active" href="/projects/civic/index.html">Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="civic"></bw-side-menu>
   		<main class="project-sections">
+        <h1>ADDITIONS AND RENOVATIONS TO THE BROOKHAVEN LIBRARY</h1>
+        <div class="location">Brookhaven, Mississippi</div>
+        <p>
+          This complex expansion and renovation of an existing 1965 library included a new children’s wing, a multi-purpose meeting room, offices, computer facilities, and a complete renovation of all mechanical and electrical systems. Although built on a very limited budget, the design incorporated bright, vibrant spaces with carefully controlled natural light with volumes of space.
+        </p>
+        <p>
+          The library is situated on the corner of two well-traveled streets in the City of Brookhaven, Mississippi and is bounded on the interior sides by the historic Whitworth College Campus.  The new addition lies to the East, at the inside boundary, and creates a new entrance at what was considered the “back” of the facility.  Upon entering the library, the Collections and Reading Room expansion are the most prominent, with all other spaces clustered around them.  Near the center, the circulation desk straddles the old and the new, and nestled underneath a work mezzanine that houses mechanical and storage space: the existing mezzanine had to be completely removed and rebuilt for structural reasons.  A Multi-Purpose Meeting Room and restrooms are accessible after hours.  The new Children’s Room stretches from the southeast corner, bathed in natural light from large windows on three sides.  A new computer room, Staff Offices, and Receiving Area all lie to the North. 
+        </p>
+        <div class="details">
+          <div>Completed: 2002</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
