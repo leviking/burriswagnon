@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a href="/projects/educational/index.html">Educational</a></li>
-          <li><a href="/projects/civic/index.html"
->Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a class="active" href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="preservation"></bw-side-menu>
   		<main class="project-sections">
+        <h1>Robert E. Lee Building</h1>
+        <div class="location">Jackson, Mississippi</div>
+        <p>
+          Designed by <a href="https://en.wikipedia.org/wiki/C._H._Lindsley">Mississippi Architect C.H. Lindsley</a>, the <b>Robert E. Lee Building</b> was built in 1928 as a luxury hotel in downtown Jackson, and was later renovated to accommodate State offices in 1969. Although some areas were updated in the late 1980s, the building envelope had not been addressed, and had suffered from water infiltration and deterioration through the years. This project involved the planning and execution of a complete exterior restoration of materials, including brick masonry, glazed terra-cotta ornament and copings, limestone cladding, fenestration, and roofing. A careful and complete analysis of the building’s envelope, including the condition and weather-tightness of its materials, and identification of conditions/locations for full preservation and restoration work was first performed.
+        </p>
+        <p>
+          With this knowledge, a design approach was established and culminated in a well-detailed set of construction documents.   A few of the parts that became the completed restoration included:  Brick masonry which was re-pointed where severely deteriorated, removed and replaced where damaged; steel relieving angles were replaced due to severe deterioration.  Much of the terra-cotta ornament and copings, which were heavily damaged, were replaced, as were sections of limestone.  The building’s wood windows, typical to most floors, required new sashes and hardware identical to the original.  Frames were saved and restored.  Large steel casement and bi-fold windows at the first, second and twelfth floors, many of them severely deteriorated, were completely removed and restored off site and reinstalled.   Also included were surgical structural repairs at several areas of the building frame, replacement of the terra-cotta and low slope roofs, and restoration / replacement of sheet metal canopies and ornamental work at the first floor. 
+        </p>
+        <p>
+          The Phase I project involved the planning and execution of an exterior envelope restoration, including window restoration/replacement, masonry restoration, and roofing. The Phase II project restored/renovated portions of four floors of the building’s twelve occupied floors, including the main lobby, cafe, Garden Room, and ADA restroom renovation at multiple floors. Restoration/retrofit is an ongoing effort, including the historic elevators, interior phases, and modernization of critical utilities are in process.
+        </p>
+        <p>
+          Additionally, as a part of the Tenant Improvement for the offices located in the building, the Robert E. Lee is seeing the eighth through the twelfth floors remodeled to house modern offices and support facilities.
+        </p>
+        <div class="details">
+          <div>Completed 2011</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
+          <img src="10.webp" data-fullsize="10.webp"/>
+          <img src="11.webp" data-fullsize="11.webp"/>
+          <img src="12.webp" data-fullsize="12.webp"/>
+          <img src="13.webp" data-fullsize="13.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
