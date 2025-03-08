@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a href="/projects/educational/index.html">Educational</a></li>
-          <li><a class="active" href="/projects/civic/index.html">Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="civic"></bw-side-menu>
   		<main class="project-sections">
+        <h1>Meridian Downtown Development Study</h1>
+        <div class="location">Meridian, Mississippi</div>
+        <p>
+          A study commissioned by the Stennis Institute for Government at Mississippi State University researched efforts for revitalizing an area of Meridian’s Downtown, where businesses primarily run by African Americans had historically thrived. The study looked at five buildings, each planned for adaptive reuse, with mixed-use functions such as a children’s museum, a multi-purpose facility, a business incubator, the relocation of the Jimmie Rodgers Museum and artists’ residences. Green space in between the buildings was also carefully considered, creating a space for a park, to be used for a variety of venues. It is the goal of the Institute to seek funding for these projects.
+        </p>
+        <div class="details">
+          <div>Completed: 2004</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
