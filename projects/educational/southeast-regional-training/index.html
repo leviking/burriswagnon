@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a class="active" href="/projects/educational/index.html">Educational</a></li>
-          <li><a href="/projects/civic/index.html"
->Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="educational"></bw-side-menu>
   		<main class="project-sections">
+        <h1>Southeast Regional Training Facility</h1>
+        <div class="location">
+          <div class="location-first">Mississippi Forestry Commission</div>
+          <div class="location-second">Pearl, Mississippi</div>
+        </div>
+        <p>
+          The State Office Building project expands a small training facility project constructed in 2004 for the Mississippi Forestry Commission.  A second phase had been planned—a building to house the Commission’s state offices; however, final planning, incorporating significant programmatic changes, and construction for Phase II were not realized until recently.  
+        </p>
+        <p>
+          The site’s gently sloping pine grove suggested the building’s placement near the crest of a hill, with the two-phase plan wrapping the contour of the crest, leaving as much vegetation as practicable. The new two-storey addition carefully respects the original project in form, materials —  steel, metal siding, wood, stone, brick, cmu  — and detailing, while subtly reinterpreting, reimagining, and maturing the original assemblages.
+        </p>
+        <p>
+          The crested landform informed a segmented plan, wrapping the knoll, that is simply organized around an asymmetrical double-loaded corridor, with office and conference areas to each side, and above. This spine, punctuated with a crenelated row of lightwells, connecting to the second floor, borrows light from the executive office exterior wall plane above.  Below, a wall of cypress paneling, abstracting exterior entrance siding used in the 2001 project, now interweaves a pattern of cypress plywood with slivers of the original cypress shiplap motif, winding thru new and existing buildings to spatially link the two projects. The paneling, washed in natural light, behind a row of heavy timber columns, leads, with the columns, the visitor from the reception area, where the two buildings are seamlessly joined at a lobby of glass and wood, to the office areas beyond.
+        </p>
+        <div class="details">
+          <div>Phase I Completed 2004</div>
+          <div>Phase II Completed 2021</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+        </div>
+        <div class="awards">
+          <div>2005 AIA Honor Award Winner</div>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
