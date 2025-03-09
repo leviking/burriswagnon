@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset="UTF-8">
 		<title>
 			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
 		</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Burris/Wagnon Architects, P.A.</li>
-				<li>
-          <a href="/">Home</a>
-        </li>
-				<li>
-          <a href='/about.html'>About The Firm</a>
-        </li>
-				<li>
-          <a href='/projects/educational/index.html'>Projects</a>
-        </li>
-				<li><a href="/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+    <bw-nav active="projects"></bw-nav>
     <div class="container">
-      <aside class="side-menu">
-        <ul>
-          <li><a class="active" href="/projects/educational/index.html">Educational</a></li>
-          <li><a href="/projects/civic/index.html"
->Civic</a></li>
-          <li><a href="/projects/office/index.html">Office</a></li>
-          <li><a href="/projects/preservation/index.html">Preservation</a></li>
-          <li><a href="/projects/ecclesiastical/index.html">Ecclesiastical</a></li>
-          <li><a href="/projects/residential/index.html">Residential</a></li>
-        </ul>
-      </aside>
+      <bw-side-menu active="educational"></bw-side-menu>
   		<main class="project-sections">
+        <h1>Northwest Middle School Addition and Renovations</h1>
+        <div class="location">
+          <div class="location-first">Jackson Public School District</div>
+          <div class="location-second">Jackson, Mississippi</div>
+        </div>
+        <p>
+          Northwest Middle School, within the Jackson Public School District, has experienced cracking and shifting of its building slab and walls for many years. This movement, more specifically due to shrinking/swelling and heaving of Yazoo clay beneath the building, has left certain areas structurally unsound. These areas, which include the cafeteria, gymnasium, auditorium, some classrooms and support areas, will be demolished and a new addition replacing these functions will be built. The new addition will employ a deep foundation system, and will be joined with the existing areas that will remain.
+        </p>
+        <div class="details">
+          <div>Area:  52,000 gsf</div>
+        </div>
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+          <img src="3.webp" data-fullsize="3.webp"/>
+          <img src="4.webp" data-fullsize="4.webp"/>
+          <img src="5.webp" data-fullsize="5.webp"/>
+          <img src="6.webp" data-fullsize="6.webp"/>
+          <img src="7.webp" data-fullsize="7.webp"/>
+          <img src="8.webp" data-fullsize="8.webp"/>
+          <img src="9.webp" data-fullsize="9.webp"/>
+          <img src="10.webp" data-fullsize="10.webp"/>
+          <img src="11.webp" data-fullsize="11.webp"/>
+          <img src="12.webp" data-fullsize="12.webp"/>
+          <img src="13.webp" data-fullsize="13.webp"/>
+          <img src="14.webp" data-fullsize="14.webp"/>
+          <img src="15.webp" data-fullsize="15.webp"/>
+        </div>
   		</main>
     </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
 	</body>
 </html>
