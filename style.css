@@ -68,49 +68,6 @@ main {
     padding: 50px 0;
 }
 
-/* Grid Layout for Content */
-.content-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* 2/3 for carousel, 1/3 for text */
-    gap: 40px; /* Space between columns */
-    align-items: start;
-    padding-bottom: 50px; /* Adds breathing room to emphasize line separation */
-    margin-bottom: 5px;
-    border-bottom: 2px solid #222; /* Strong line under header */
-}
-
-/* Text Column */
-.text-column {
-  width: 340px;
-}
-
-/* Carousel Column */
-.carousel-column {
-  width: 100%;
-  max-width: 915px;
-  box-sizing: border-box;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -147,17 +104,6 @@ main {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 3.25s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 /* Header Styles */
@@ -402,9 +348,6 @@ dialog img {
     overflow-x: hidden;
     margin: 0;
   }
-    .content-container {
-      grid-template-columns: 1fr; /* Stack columns vertically */
-    }
 
     h1 {
         font-size: 2rem;
@@ -445,12 +388,4 @@ dialog img {
         padding: 10px;
     }
 
-    .carousel-column {
-        max-width: 100%;
-    }
-    /* Slideshow container */
-    .slideshow-container {
-       width: 100%;
-       margin-left: 0px;
-    }
 }

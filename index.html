@@ -7,106 +7,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="/components/bw-nav.js"></script>
+    <style>
+      /* Grid Layout for Content */
+      .content-container {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          gap: 40px;
+          align-items: start;
+          padding-bottom: 50px;
+          margin-bottom: 5px;
+          border-bottom: 2px solid #222;
+      }
+
+      .text-column {
+        width: 340px;
+      }
+
+      .carousel-column {
+        width: 100%;
+        max-width: 915px;
+        box-sizing: border-box;
+      }
+
+      .slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        box-sizing: border-box;
+        min-height: 200px;
+        height: auto;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+      }
+
+      .mySlides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        z-index: 0;
+      }
+
+      .mySlides.active {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      .mySlides img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        z-index: 2;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      @media (max-width: 824px) {
+        .content-container {
+          grid-template-columns: 1fr;
+        }
+        .carousel-column {
+            max-width: 100%;
+        }
+        .slideshow-container {
+           width: 100%;
+           margin-left: 0px;
+        }
+      }
+    </style>
 </head>
 <body>
-    <bw-nav active="home"></bw-nav>
-    <main>
-        <div class="content-container">
-            <!-- Left Column: Text Content -->
-            <div class="text-column">
-            </div>
-            <!-- Right Column: Carousel -->
-            <div class="carousel-column">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <img src="1.png" style="width:100%">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="2.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="3.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="4.jpg" style="width:100%">
-                    </div>
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-            </div>
+  <bw-nav active="home"></bw-nav>
+  <main>
+    <div class="content-container">
+      <div class="text-column">
+        <!-- Optional Text Content Here -->
+      </div>
+      <div class="carousel-column">
+        <div class="slideshow-container">
+          <div class="mySlides active">
+            <img src="1.png" alt="Slide 1">
+          </div>
+          <div class="mySlides">
+            <img src="2.jpg" alt="Slide 2">
+          </div>
+          <div class="mySlides">
+            <img src="3.jpg" alt="Slide 3">
+          </div>
+          <div class="mySlides">
+            <img src="4.jpg" alt="Slide 4">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-          <h1 style="border-bottom: none; font-family: Helvetica, Arial, sans-serif;"> <em>Intentionally-small.</em>
-              <span>
-                  Big ideas.
-                  Big experience.
-              </span>
-          </h1>
-        <p>
-            <b>Burris/Wagnon Architects, P.A.</b> is an intentionally-small, award-winning design firm in Jackson, Mississippi, offering architecture, planning, and interior design services. Though small in number, we are large in agility, experience, technical expertise, ideas, and vision. From large-scale university campus projects to intimate residential projects, we design for functionality, durability, and sustainability.
-        </p>
-        <p>
-            <em>We design with purpose. We design with care. And we design to inspire.</em>
-        </p>
-    </main>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        // Thumbnail image controls (if using thumbnails)
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            
-            slides[slideIndex-1].style.display = "block";
-            
-            if(dots.length > 0){
-                dots[slideIndex-1].className += " active";
-            }
-        }
-        
-        // Auto-advance slides every 5 seconds
-        let slideInterval = setInterval(function(){
-            plusSlides(1);
-        }, 5000); // Change image every 5 seconds
-        
-        // Optional: Pause on hover
-        const slideshowContainer = document.querySelector('.slideshow-container');
+        <br>
+      </div>
+    </div>
 
-        slideshowContainer.addEventListener('mouseenter', function() {
-            clearInterval(slideInterval);
-        });
+    <h1 style="border-bottom: none; font-family: Helvetica, Arial, sans-serif;">
+      <em>Intentionally-small.</em>
+      <span>
+        Big ideas. Big experience.
+      </span>
+    </h1>
 
-        slideshowContainer.addEventListener('mouseleave', function() {
-            slideInterval = setInterval(function(){
-                plusSlides(1);
-            }, 5000);
-        });
-    </script>
+    <p>
+      <b>Burris/Wagnon Architects, P.A.</b> is an intentionally-small, award-winning design firm in Jackson, Mississippi, offering architecture, planning, and interior design services. Though small in number, we are large in agility, experience, technical expertise, ideas, and vision. From large-scale university campus projects to intimate residential projects, we design for functionality, durability, and sustainability.
+    </p>
+    <p>
+      <em>We design with purpose. We design with care. And we design to inspire.</em>
+    </p>
+  </main>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+
+      slides[slideIndex - 1].classList.add("active");
+    }
+
+    let slideInterval = setInterval(function(){
+      plusSlides(1);
+    }, 5000);
+
+    const slideshowContainer = document.querySelector('.slideshow-container');
+
+    slideshowContainer.addEventListener('mouseenter', function() {
+      clearInterval(slideInterval);
+    });
+
+    slideshowContainer.addEventListener('mouseleave', function() {
+      slideInterval = setInterval(function(){
+        plusSlides(1);
+      }, 5000);
+    });
+  </script>
 </body>
 </html>
 
