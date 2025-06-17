@@ -6,6 +6,9 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="preload" as="image" href="2.webp">
+    <link rel="preload" as="image" href="3.webp">
+    <link rel="preload" as="image" href="4.webp">
     <script src="/components/bw-nav.js"></script>
     <style>
       /* Grid Layout for Content */
@@ -107,16 +110,16 @@
       <div class="carousel-column">
         <div class="slideshow-container">
           <div class="mySlides active">
-            <img src="1.png" alt="Slide 1">
+            <img src="1.webp" loading="lazy" alt="Slide 1">
           </div>
           <div class="mySlides">
-            <img src="2.jpg" alt="Slide 2">
+            <img src="2.webp" loading="lazy" alt="Slide 2">
           </div>
           <div class="mySlides">
-            <img src="3.jpg" alt="Slide 3">
+            <img src="3.webp" loading="lazy" alt="Slide 3">
           </div>
           <div class="mySlides">
-            <img src="4.jpg" alt="Slide 4">
+            <img src="4.webp" loading="lazy" alt="Slide 4">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -170,15 +173,7 @@
 
     const slideshowContainer = document.querySelector('.slideshow-container');
 
-    slideshowContainer.addEventListener('mouseenter', function() {
-      clearInterval(slideInterval);
-    });
 
-    slideshowContainer.addEventListener('mouseleave', function() {
-      slideInterval = setInterval(function(){
-        plusSlides(1);
-      }, 5000);
-    });
   </script>
 </body>
 </html>
