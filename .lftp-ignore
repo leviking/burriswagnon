@@ -1,0 +1,8 @@
+.git*
+.git/*
+.mise.toml
+deploy.sh
+.env
+*.swp
+README.md
+.lftp-ignore

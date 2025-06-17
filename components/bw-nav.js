@@ -62,7 +62,7 @@ class BwNav extends HTMLElement {
       </style>
       <nav>
         <ul>
-          <li>Burris/Wagnon Architects, P.A.</li>
+          <li><b>Burris/Wagnon Architects, P.A.</b></li>
           <li><a href="/" data-id="home">Home</a></li>
           <li><a href="/about.html" data-id="about">About The Firm</a></li>
           <li><a href="/projects/educational/index.html" data-id="projects">Projects</a></li>
