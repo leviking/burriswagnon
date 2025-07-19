@@ -54,6 +54,11 @@ class BwNav extends HTMLElement {
             color: #000;
             border-bottom: 1px solid #000; /* Line weight emphasis on hover */
         }
+        
+        .firm-name{
+            font-size: 24px;
+            color: rgb(54, 192, 251);
+        }
         @media (max-width: 824px) {
             nav ul {
               flex-direction: column;
@@ -62,7 +67,7 @@ class BwNav extends HTMLElement {
       </style>
       <nav>
         <ul>
-          <li><b>Burris/Wagnon Architects, P.A.</b></li>
+          <li class='firm-name'><b><em>Burris/Wagnon Architects, P.A.</em></b></li>
           <li><a href="/" data-id="home">Home</a></li>
           <li><a href="/about.html" data-id="about">About The Firm</a></li>
           <li><a href="/projects/educational/index.html" data-id="projects">Projects</a></li>
