@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-project.js"></script>
     <script src="/components/bw-side-menu.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,42 +18,10 @@
     <div class="container">
       <bw-side-menu active="office"></bw-side-menu>
   		<main class="project-sections">
-        <a href="/projects/office/bowles-hall/index.html" class="no-decoration">
-          <figure>
-            <img src="bowles.webp" alt="Image of bowles hall at alcorn" />
-            <figcaption>
-              Bowles Hall
-              <br>
-              Alcorn State University
-            </figcaption>
-          </figure>
-        </a>
-        <a 
-          href="/projects/office/department-of-rehabilitation-services/index.html" 
-          class="no-decoration"
-        >
-          <figure>
-            <img 
-              src="rehab.webp" 
-              alt="Stunning image of the department of rehabilitation services in Madison Mississippi" 
-            />
-            <figcaption>
-              Mississippi Department of Rehabilitation Services
-              <br>
-              Madison, MS
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/office/rel-tenant-improvement/index.html" class="no-decoration">
-          <figure>
-            <img src="rel.webp" alt="Arial photo of the Robert E. Lee hotel in Jackson Mississippi" />
-            <figcaption>
-              Robert E. Lee
-              <br>
-              Jackson, MS
-            </figcaption>
-          </figure>
-        </a>
+        <project-card category="office" slug="southeast-regional-training-facility" secondary="Mississippi Forestry Commission"></project-card>
+        <project-card category="office" slug="bowles-hall" secondary="Alcorn State University"></project-card>
+        <project-card category="office" slug="mississippi-department-of-rehabilitation-services" location="Madison, MS"></project-card>
+        <project-card category="office" slug="robert-e-lee" location="Jackson, MS"></project-card>
   		</main>
     </div>
 	</body>
