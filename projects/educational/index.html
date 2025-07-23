@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-project.js"></script>
     <script src="/components/bw-side-menu.js"></script>
 	</head>
 	<body>
@@ -14,134 +15,19 @@
     <div class="container">
       <bw-side-menu active="educational"></bw-side-menu>
   		<main class="project-sections">
-        <a href="/projects/educational/fant-memorial-library/index.html" class="no-decoration">
-          <figure>
-            <img src="fant-memorial-library.webp" alt="Fant Memorial Library photo" />
-            <figcaption>
-              Fant Memorial Library Rennovations and Additions
-              <br>
-              Mississippi University for Women
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/early-childhood-education/index.html" class="no-decoration">
-          <figure>
-            <img src="early-childhood-education.webp" alt="Early Childhood Educational Facility photo" />
-            <figcaption>
-              Early Childhood Educational Facility
-              <br>
-              Copiah-Lincoln Community College
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/northwest-middle/index.html" class="no-decoration">
-          <figure>
-            <img src="northwest-middle.webp" alt="Northwest Middle School photo" />
-            <figcaption>
-              Northwest Middle School
-              <br>
-              Jackson, MS
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/simpson-county-center/index.html" class="no-decoration">
-          <figure>
-            <img src="simpson-county-center.webp" alt="Simpson County Center Building photo" />
-            <figcaption>
-              Simpson County Center Building
-              <br>
-              Copiah-Lincoln Community College
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/young-mauldin-cafeteria/index.html" class="no-decoration">
-          <figure>
-            <img src="young-mauldin-cafeteria.webp" alt="Young-Mauldin Cafeteria photo" />
-            <figcaption>
-              Young-Mauldin Cafeteria
-              <br>
-              Rennovations Delta State University
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/student-research-center/index.html" class="no-decoration">
-          <figure>
-            <img src="student-research-center.webp" alt="USM Student Resource Center photo" />
-            <figcaption>
-              USM Student Resource Center
-              <br>
-              University of Southern Mississippi
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/new-classroom-fire-academy/index.html" class="no-decoration">
-          <figure>
-            <img src="new-classroom-fire-academy.webp" alt="Mississippi State Fire Academy Classroom Building photo" />
-            <figcaption>
-              Classroom Building
-              <br>
-              Mississippi State Fire Academy
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/burn-building/index.html" class="no-decoration">
-          <figure>
-            <img src="burn-building.webp" alt="New Burn Building photo" />
-            <figcaption>
-              New Burn Building
-              <br>
-              State Fire Academy
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/ward-hall/index.html" class="no-decoration">
-          <figure>
-            <img src="ward-hall.webp" alt="Ward Hall photo" />
-            <figcaption>
-              Ward Hall
-              <br>
-              Delta State University
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/kethley-hall/index.html" class="no-decoration">
-          <figure>
-            <img src="kethley-hall.webp" alt="Kethley Hall Rennovations photo" />
-            <figcaption>
-              Kethley Hall Rennovations
-              <br>
-              Delta State University
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/southeast-regional-training/index.html" class="no-decoration">
-          <figure>
-            <img src="southeast-regional-training.webp" alt="Southeast Regional Training Facility photo" />
-            <figcaption>
-              Southeast Regional Training Facility
-              <br>
-              Mississippi Forestry Commission
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/ellzey-hall/index.html" class="no-decoration">
-          <figure>
-            <img src="ellzey-hall.webp" alt="Ellzey Hall Renovation photo" />
-            <figcaption>
-              Ellzey Hall Renovation
-              <br>
-              Copiah-Lincoln Community College
-            </figcaption>
-          </figure>
-        </a>
-        <a href="/projects/educational/fire-station-dorm/index.html" class="no-decoration">
-          <figure>
-            <img src="fire-station-dorm.webp" alt="Fire Station/Dormitory photo" />
-            <figcaption>
-              Fire Station/Dormitory
-            </figcaption>
-          </figure>
-        </a>
+        <project-card category="educational" slug="fire-station-dorm"></project-card>
+        <project-card category="educational" slug="southeast-regional-training-facility" secondary="Mississippi Forestry Commision"></project-card>
+        <project-card category="educational" slug="simpson-county-center-building" secondary="Copiah-Lincoln Community College"></project-card>
+        <project-card category="educational" slug="young-mauldin-cafeteria" secondary="Rennovations Delta State University"></project-card>
+        <project-card category="educational" slug="northwest-middle-school" location="Jackson, MS"></project-card>
+        <project-card category="educational" slug="usm-student-research-center" secondary="University of Southern Mississippi"></project-card>
+        <project-card category="educational" slug="classroom-building" secondary="Mississippi State Fire Academy"></project-card>
+        <project-card category="educational" slug="kethley-hall" secondary="Delta State University"></project-card>
+        <project-card category="educational" slug="ward-hall" secondary="Delta State University"></project-card>
+        <project-card category="educational" slug="fant-memorial-library-rennovations-and-additions" secondary="Mississippi University for Women"></project-card>
+        <project-card category="educational" slug="early-childhood-educational-facility" secondary="Copiah-Lincoln Community College"></project-card>
+        <project-card category="educational" slug="new-burn-building" secondary="State Fire Acadmey"></project-card>
+        <project-card category="educational" slug="ellzey-hall-rennovation" secondary="Copiah-Lincoln Community College"></project-card>
   		</main>
     </div>
 	</body>
