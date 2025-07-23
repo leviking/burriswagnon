@@ -40,9 +40,9 @@ The folder structure of images more or less mirrors the rest of the structure to
 - [x] slower dissolve (4 seconds)
 mauldin, usm, simpson, forestry,
 - [x] remove first christian (last on ecclesiastical)
-- [] hickman from education to office
-- [] mcgruder hall to education
-- [] young mauldin duplicate photo
-- [] ward hall - take off square footage
-- [] forrestry move to office (southern regional training )
-- [] additional forrestry shots
+- [x] hickman from education to office
+- [x] mcgruder hall to education
+- [x] young mauldin duplicate photo
+- [x] ward hall - take off square footage
+- [x] forrestry move to office (southern regional training )
+- [x] additional forrestry shots

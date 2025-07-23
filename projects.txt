@@ -1,45 +1,47 @@
-#Educational
+#Educational x
 -FireStationDormitory
--FantMemorialLibrary
--KethleyHall
--EarlyChildhoodEducation
--NorthwestMiddleSchool
 -SimpsonCountyCenter
 -YoungMauldinCafeteria
+-FantMemorialLibrary
+-NorthwestMiddleSchool
+-EarlyChildhoodEducation
 -StudentResearchCenter
 -NewClassroomFacilityStateFireAcademy
--NewBurnBuilding
--WardHallPrePlan
 -EllzeyHall
--SoutheastRegionalTraining
+-WardHallPrePlan
+-KethleyHall
+-NewBurnBuilding
+XXX-SoutheastRegionalTraining
 
 #Civic x
 -MississippiLibraryCommision
 -EllisvillePublicLibrary
--BrookhavenLibrary
--MeridianDowntownDevelopment
 -MississippiRiverBasinModel
--CamdenLibrary
+-MeridianDowntownDevelopment
 -FloraPublicLibrary
+-CamdenLibrary
+-BrookhavenLibrary
 
-#Office x
+#Office x 
+MOVE Forestry (SE REGIONAL)
+ADD Hickman
 -BowlesHallAtAlcorn
 -DepartmentOfRehabilitationServices
 -RobertELeeTenantImprovement
 
 #Preservation x 
--NavalReserveCenter
--WestbrookHome
--BaileySchool
 -RobertELee
 -BowlesHall
+-NavalReserveCenter
+-BaileySchool
 -MississippiStateHospital
+-WestbrookHome
 
-#Ecclesiastical x
+#Ecclesiastical 
 -RedeemerChurch
 -UrbanMinistryCenter
 -ProvidencePresbyterian
--FirstChristianChurch
+XXXX-FirstChristianChurch
 
 #Residential x
 -BelhavenResidence
