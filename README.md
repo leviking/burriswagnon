@@ -26,7 +26,7 @@ Although it is possible to get further in the weeds and make sub-sub-folders for
 The folder structure of images more or less mirrors the rest of the structure to keep from cluttering the actual markup of the site with images. I may come to regret that. In any case, simply add folders where appropriate and use them in the html. If it turns out there needs to be video or anything else - I'll cross that bridge when we get to it.
 
 ## TODO
-- [] replace all instances of nav with component
+- [x] replace all instances of nav with component
 - [] replace all instances of side menu with component
 - [] possibly make thumbnail a component
 - [] make all images better
@@ -34,3 +34,15 @@ The folder structure of images more or less mirrors the rest of the structure to
 - [] add photos and thumbnails to educational
 - [] add photos and thumbnails to preservation
 - [] add photos and thumbnails to civic
+
+- [x] BW name italics (24px), cornflower blue
+- [x] more splash photos (from old site)
+- [x] slower dissolve (4 seconds)
+mauldin, usm, simpson, forestry,
+- [x] remove first christian (last on ecclesiastical)
+- [] hickman from education to office
+- [] mcgruder hall to education
+- [] young mauldin duplicate photo
+- [] ward hall - take off square footage
+- [] forrestry move to office (southern regional training )
+- [] additional forrestry shots
