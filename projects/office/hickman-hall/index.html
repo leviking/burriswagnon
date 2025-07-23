@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Burris/Wagnon Architects, P.A. – Intentionally-small. Big ideas. Big experience.
+		</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/components/bw-nav.js"></script>
+    <script src="/components/bw-side-menu.js"></script>
+	</head>
+	<body>
+    <bw-nav active="projects"></bw-nav>
+    <div class="container">
+      <bw-side-menu active="office"></bw-side-menu>
+  		<main class="project-sections">
+        <h1>Hickman Hall</h1>
+        <div class="location">
+          <div class="location-first">
+            University of Southern Mississippi
+          </div><div class="location-second">
+            Hattiesburg, Mississippi
+          </div>
+        </div>
+
+        <div class="thumbnails">
+          <img src="1.webp" data-fullsize="1.webp"/>
+          <img src="2.webp" data-fullsize="2.webp"/>
+        </div>
+  		</main>
+    </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="Full-size Image">
+    </dialog>
+    <script src="/thumbnail.js" defer></script>
+	</body>
+</html>
