@@ -11,6 +11,8 @@
     <link rel="preload" as="image" href="splash/4.webp">
     <script src="/components/bw-nav.js"></script>
     <style>
+      html, body {
+      }
       /* Grid Layout for Content */
       .content-container {
           display: grid;
@@ -88,6 +90,9 @@
       }
 
       @media (max-width: 824px) {
+        html, body {
+          overflow: auto;
+        }
         .content-container {
           grid-template-columns: 1fr;
         }
