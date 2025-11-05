@@ -16,6 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Burris/Wagnon Architects, P.A.">
     <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="https://burriswagnon.com/">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -23,11 +24,65 @@
     <meta name="twitter:description" content="Burris/Wagnon Architects is an intentionally-small, award-winning design firm in Jackson, Mississippi, offering architecture, planning, and interior design services.">
     <meta name="twitter:image" content="https://burriswagnon.com/splash/1.webp">
     
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <link rel="stylesheet" href="/style.css">
     <link rel="preload" as="image" href="splash/2.webp">
     <link rel="preload" as="image" href="splash/3.webp">
     <link rel="preload" as="image" href="splash/4.webp">
     <script src="/components/bw-nav.js"></script>
+    
+    <!-- Structured Data - Business Information -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArchitecturalDesign",
+      "name": "Burris/Wagnon Architects, P.A.",
+      "description": "An intentionally-small, award-winning design firm in Jackson, Mississippi, offering architecture, planning, and interior design services.",
+      "url": "https://burriswagnon.com/",
+      "telephone": "+1-601-969-7543",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "500L East Woodrow Wilson Avenue",
+        "addressLocality": "Jackson",
+        "addressRegion": "MS",
+        "postalCode": "39216",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.3182",
+        "longitude": "-90.1803"
+      },
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "sameAs": [
+        "https://burriswagnon.com/"
+      ],
+      "serviceType": [
+        "Architecture",
+        "Planning",
+        "Interior Design"
+      ],
+      "areaServed": "Mississippi",
+      "foundingDate": "1997",
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Stan Wagnon",
+          "jobTitle": "Principal Architect"
+        },
+        {
+          "@type": "Person", 
+          "name": "Bill Burris",
+          "jobTitle": "Principal Architect"
+        }
+      ]
+    }
+    </script>
     <style>
       html, body {
       }
