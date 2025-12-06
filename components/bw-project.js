@@ -34,12 +34,17 @@ class ProjectCard extends HTMLElement {
   }
 
   titleFromSlug(slug) {
-    return slug
-      .split('-')
-      .map(word => {
+    const words = slug.split('-');
+    const smallWords = new Set(['and', 'or', 'the', 'a', 'an', 'of', 'in', 'on', 'for', 'to', 'by', 'at', 'from', 'with', 'vs']);
+
+    return words
+      .map((word, index) => {
+        const lowerWord = word.toLowerCase();
         if (/^[a-z]\.$/.test(word)) return word.toUpperCase(); // E. → E.
         const acronyms = { mlk: 'MLK', usa: 'USA', us: 'U.S.', usm: 'USM' };
-        return acronyms[word] || word.charAt(0).toUpperCase() + word.slice(1);
+        if (acronyms[lowerWord]) return acronyms[lowerWord];
+        if (index > 0 && smallWords.has(lowerWord)) return lowerWord; // Keep small words lowercase when not first
+        return lowerWord.charAt(0).toUpperCase() + lowerWord.slice(1);
       })
       .join(' ');
   }
