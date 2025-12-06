@@ -26,14 +26,15 @@ Although it is possible to get further in the weeds and make sub-sub-folders for
 The folder structure of images more or less mirrors the rest of the structure to keep from cluttering the actual markup of the site with images. I may come to regret that. In any case, simply add folders where appropriate and use them in the html. If it turns out there needs to be video or anything else - I'll cross that bridge when we get to it.
 
 ## TODO
+I think these are done, but possibly need to confirm
 - [x] replace all instances of nav with component
-- [] replace all instances of side menu with component
-- [] possibly make thumbnail a component
-- [] make all images better
-- [] add photos and thumbnails to ecclesiastical
-- [] add photos and thumbnails to educational
-- [] add photos and thumbnails to preservation
-- [] add photos and thumbnails to civic
+- [x] replace all instances of side menu with component
+- [x] possibly make thumbnail a component
+- [x] make all images better
+- [x] add photos and thumbnails to ecclesiastical
+- [x] add photos and thumbnails to educational
+- [x] add photos and thumbnails to preservation
+- [x] add photos and thumbnails to civic
 
 - [x] BW name italics (24px), cornflower blue
 - [x] more splash photos (from old site)
