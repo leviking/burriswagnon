@@ -4,18 +4,37 @@ const dialogImage = document.getElementById('dialogImage');
 let images = [];
 let currentIndex = 0;
 
-// Fetch the JSON file and store the image list
+// Fetch the JSON file and store the image list, then warm the cache for full-size images.
 fetch('images.json')
-  .then(response => response.json())
-  .then(data => {
+  .then((response) => response.json())
+  .then((data) => {
     images = data;
+    queuePrefetch(data);
   });
+
+function queuePrefetch(list) {
+  const prefetch = () => {
+    if (!('caches' in window)) return;
+    caches.open('bw-fullsize-images').then((cache) => {
+      const urls = list.map((img) => new URL(img, window.location.href).toString());
+      cache.addAll(urls).catch(() => {
+        // Cache API might fail on some hosts; ignore silently.
+      });
+    });
+  };
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(prefetch, { timeout: 2000 });
+  } else {
+    setTimeout(prefetch, 500);
+  }
+}
 
 // Open the dialog with the full-size image when a thumbnail is clicked
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener('click', () => {
     currentIndex = index;
-    const fullsizeSrc = images[currentIndex];
+    const fullsizeSrc = thumbnail.dataset.fullsize || images[currentIndex];
     dialogImage.src = fullsizeSrc;
     dialog.showModal();
   });
@@ -30,7 +49,8 @@ function updateImage(newIndex) {
   }
 
   currentIndex = newIndex;
-  dialogImage.src = images[currentIndex];
+  const fullsizeSrc = thumbnails[currentIndex].dataset.fullsize || images[currentIndex];
+  dialogImage.src = fullsizeSrc;
 }
 
 // Event listener to handle clicks on the dialog for navigation
@@ -65,4 +85,3 @@ dialog.addEventListener('click', (event) => {
     dialog.close();
   }
 });
-
