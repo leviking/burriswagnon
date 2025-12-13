@@ -2,10 +2,11 @@ class ProjectCard extends HTMLElement {
   connectedCallback() {
     const category = this.getAttribute('category');
     const slug = this.getAttribute('slug');
+    const customTitle = this.getAttribute('title');
     const location = this.getAttribute('location');
     const secondary = this.getAttribute('secondary');
 
-    const title = this.titleFromSlug(slug);
+    const title = customTitle || this.titleFromSlug(slug);
     const href = `/projects/${category}/${slug}/index.html`;
     const imgSrc = `${slug}.webp`;
 
