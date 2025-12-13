@@ -171,6 +171,13 @@ figure .project-caption {
   font-size: 15px;
 }
 
+.info-box {
+  margin: 18px 0 26px;
+  font-style: italic;
+  display: grid;
+  gap: 6px;
+}
+
 /* Side menu styling */
 .side-menu {
     position: fixed;
