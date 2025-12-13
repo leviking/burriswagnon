@@ -24,9 +24,9 @@ class ProjectCard extends HTMLElement {
       <a href="${href}" class="no-decoration">
         <figure>
           <img src="${imgSrc}" alt="${alt}" />
-          <figcaption>
-            ${line1}
-            ${line2 ? `<br>${line2}` : ''}
+          <figcaption class="project-caption">
+            <span class="project-title">${line1}</span>
+            ${line2 ? `<span class="project-subtitle">${line2}</span>` : ''}
           </figcaption>
         </figure>
       </a>
