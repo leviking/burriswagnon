@@ -154,7 +154,7 @@ figure img {
 
 figure .project-caption {
   margin-top: 12px;
-  line-height: 0.875;
+  line-height: 1.25;
 }
 
 .project-caption .project-title {
@@ -164,11 +164,10 @@ figure .project-caption {
 
 .project-caption .project-subtitle {
   display: block;
-  margin-top: 6px;
   margin-bottom: 8px;
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14.67px;
 }
 
 .info-box {
