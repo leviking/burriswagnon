@@ -174,7 +174,7 @@ figure .project-caption {
   margin: 18px 0 26px;
   font-style: italic;
   display: grid;
-  gap: 6px;
+  line-height: 1.125;
 }
 
 /* Side menu styling */
