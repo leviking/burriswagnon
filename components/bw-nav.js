@@ -87,6 +87,7 @@ class BwNav extends HTMLElement {
 
   // Called when the element is added to the DOM
   connectedCallback() {
+    this.ensureAnalytics();
     this.updateActiveState();
   }
 
@@ -114,8 +115,26 @@ class BwNav extends HTMLElement {
       }
     });
   }
+
+  // Lightweight injector to add GA once without touching every page
+  ensureAnalytics() {
+    const measurementId = 'G-RMW3K7NFJT';
+    const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    if (isLocal || document.getElementById('ga-gtag')) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag(){ window.dataLayer.push(arguments); };
+
+    const script = document.createElement('script');
+    script.id = 'ga-gtag';
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+    document.head.appendChild(script);
+
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId);
+  }
 }
 
 // Define the custom element
 customElements.define('bw-nav', BwNav);
-
